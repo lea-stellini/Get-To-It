@@ -17,19 +17,24 @@
     <main>
         <div class="input__task">
             <label for="task">Tâche à réaliser :</label>
-            <input type="text" name="task" placeholder="Nettoyer le frigo">
+            <input id="task" type="text" name="task" placeholder="Nettoyer le frigo">
         </div>
         
-        <div class="active__task">
-            <div class="checkbox">
-                <input type="checkbox">
-                <span class="checkmark"></span>
+        <div>
+            <!-- <div id="checkbox__container">
+                <input id="checkbox" type="checkbox">
+            </div> -->
+            <div id="active__task">
+
             </div>
-            <p>Passer l'aspirateur</p>
         </div>
 
-        <button class="btn__start">Commencer !</button>
+        <button type="button" id="btn__start" class="btn">Commencer !</button>
+        <button type="button" id="btn__next" class="btn">Suivant !</button>
+        <button type="button" id="btn__end" class="btn">Terminer !</button>
+        <button type="button" id="btn__again" class="btn">Recommencer !</button>
 
     </main>
+    <script src="./script.js" type="module"></script>
 </body>
 </html>

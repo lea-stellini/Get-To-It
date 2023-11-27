@@ -73,11 +73,12 @@ main{
     height: 100px;
 }
 
-.checkbox{
+#checkbox__container{
     position: relative;
-    top: 47%;
-    right: 10px;
+    top: 50%;
+    right: 25%;
     font-size: 22px;
+    display: none;
 }
 
 input[type="checkbox"] {
@@ -108,12 +109,11 @@ input[type="checkbox"]:checked::before {
     transform: scale(1);
 }
 
-.active__task p{
+#active__task p{
     font-size: 36px;
-    padding-left: 10px;
 }
 
-.btn__start{
+.btn{
     background-color: var(--primary);
     color: var(--secondary);
     padding: 18px 25px;
@@ -127,11 +127,15 @@ input[type="checkbox"]:checked::before {
     -webkit-transition: all .1s;
 }
 
-.btn__start:active{
+.btn:active{
     transform: scale(0.95);
     -webkit-transform: scale(0.95);
     box-shadow: 0 0 var(--tertiary);
     border: 1px solid var(--primary);
     background-color: var(--secondary);
     color: var(--primary);
+}
+
+#btn__start, #btn__next, #btn__end, #btn__again{
+    display: none;
 }
