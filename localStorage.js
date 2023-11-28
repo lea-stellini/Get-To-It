@@ -10,14 +10,16 @@ export const getLocalStorage = () => {
 };
 
 export const removeFromLocalStorage = (array, item) => {
-    console.log(array)
-
+  
     const newArray = array.filter(el => el !== item)
-    console.log(newArray)
+
     if(newArray.length === 1){
         btnNext.style.display = "none";
         btnEnd.style.display = "block";
-    }
+    } else if(newArray.length > 1){
+        btnNext.style.display = "block";
+        btnEnd.style.display = "none";
+     }
 
     stockInLocalStorage(newArray);
 };

@@ -17,6 +17,8 @@ const getRandomTask = () => {
     return null;
 };
 
+
+
 export const btnEventListeners = () => {
 
     btnStart.addEventListener('click', () => {
@@ -48,6 +50,7 @@ export const btnEventListeners = () => {
     })
 
     btnAgain.addEventListener('click', () => {
-        location.reload(true)
+        localStorage.removeItem("tasks");
+        location.reload(true);
     })
 };
